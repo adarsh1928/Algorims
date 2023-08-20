@@ -7,8 +7,11 @@ class Solution {
 public:
     void merge(vector<int>& nums,int l, int r, int m){
         int n=nums.size();
+
         vector<int> ans(r-l+1);
+
         int i=l,j=m+1,k=0;
+
         while(i<=m && j<=r){
             if(nums[i]<=nums[j]){
                 ans[k++]=nums[i++];
@@ -27,6 +30,7 @@ public:
             nums[l+i]=ans[i];
         }
     }
+    
     int cnt;
      void merge(vector<int>& nums,int l, int r, int m,int diff){
         int n=nums.size();

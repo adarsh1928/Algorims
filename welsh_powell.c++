@@ -7,6 +7,7 @@ public:
     // that no two adjacent vertices of graph are coloured with same colour.
     
     
+    
     bool isSafeColor(bool graph[101][101], int i, int j,vector<int>&color,int m,int n){
         
         
